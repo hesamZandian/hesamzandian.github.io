@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+
+.SocialMedia {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 8px;
+
+  .SocialMediaIcon {
+    box-shadow: $default-light-box-shadow-btn;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    width: 40px;
+    height: 40px;
+
+    svg {
+      height: 30px;
+      cursor: pointer;
+    }
+
+    &:hover {
+      box-shadow: $hover-light-box-shadow-btn;
+      transition: 0.3s;
+    }
+
+    &:active {
+      box-shadow: $active-light-box-shadow-btn;
+      transition: 0.3s;
+    }
+  }
+
+}
+
+.SocialMedia--dark {
+  .SocialMediaIcon {
+    box-shadow: $default-dark-box-shadow-btn;
+    &:hover {
+      box-shadow: $hover-dark-box-shadow-btn;
+      transition: 0.3s;
+    }
+  
+    &:active {
+      box-shadow: $active-dark-box-shadow-btn;
+      transition: 0.3s;
+    }
+  }
+}

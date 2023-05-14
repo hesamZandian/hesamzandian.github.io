@@ -1,0 +1,234 @@
+@import "../../../styles/variables.scss";
+
+.WorkExperience {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: -3px 2px 6px rgba(77, 168, 218, 0.25),
+    inset 0px 1.56907px 11.830px -4.70721px #00d8ff;
+  border-radius: 15px;
+  padding: 32px 18px;
+  transition: 0.3s;
+  background-color: #ebf8f8;
+  max-width: 390px;
+  min-height: 460px;
+}
+
+.WorkExperience--dark {
+  color: $light-color;
+
+  .WorkExperience__CompanyInfo__name,
+  .WorkExperience__CompanyInfo__role {
+    color: $secondary-color !important;
+  }
+
+  .WorkExperience__CompanyImage {
+    box-shadow: 0.754098px -0.754098px 3.01639px rgba(77, 168, 218, 0.5);
+  }
+
+  .WorkExperience__MoreDetails {
+    background-color: $light-color;
+  }
+
+  .WorkExperience__Responsibilities {
+    span {
+      color: $light-color;
+    }
+
+    li {
+      color: $primary-color;
+    }
+  }
+}
+
+.WorkExperience__Company {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.WorkExperience__CompanyDetailsContainer {
+  display: flex;
+}
+
+.WorkExperience__CompanyDetails {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 12px;
+  box-shadow: 0px 1.54528px 3.09056px rgba(77, 168, 218, 0.5);
+  border-radius: 80px;
+  padding-right: 36px;
+}
+
+.WorkExperience__CompanyImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  width: 80px;
+  height: 80px;
+  margin-right: 16px;
+  transition: 0.3s;
+  box-shadow: 0.754098px -0.754098px 3.01639px rgba(77, 168, 218, 0.5);
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.WorkExperience__CompanyInfo {
+  width: calc(100% - 80px);
+
+  .WorkExperience__CompanyInfo__name,
+  .WorkExperience__CompanyInfo__role {
+    font-size: $font-text;
+  }
+
+  .WorkExperience__CompanyInfo__details {
+    margin-left: 8px;
+    color: rgb(136, 145, 150);
+  }
+}
+
+.WorkExperience__CompanyInfo__description {
+  padding-left: 25px;
+  font-size: 16px;
+}
+
+.WorkExperience__button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.WorkExperience__Responsibilities {
+  margin-top: 16px;
+  padding-left: 25px;
+
+  h3 {
+    font-size: 16px;
+    font-family: M_Bold;
+    color: $secondary-color;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      font-size: 16px;
+      margin-bottom: 5px;
+
+      &::marker {
+        color: $secondary-color !important;
+      }
+    }
+  }
+}
+
+.WorkExperience__TechStacks {
+  margin-top: 16px;
+  padding-left: 25px;
+
+  h3 {
+    font-size: 16px;
+    font-family: M_Bold;
+  }
+
+  .WorkExperience__TechStacksList {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+
+    span {
+      font-size: 16px;
+      border: 1px dashed #4da8da;
+      border-radius: 8px;
+      padding: 0 6px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      @media (max-width: 830px) {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .WorkExperience__TechStacksList--dark {
+    span {
+      color: $light-color !important;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .WorkExperience__CompanyDetails {
+    padding-right: 0 !important;
+    width: 100%;
+  }
+
+  .WorkExperience__TechStacks,
+  .WorkExperience__CompanyInfo__description,
+  .WorkExperience__Responsibilities {
+    padding-left: 0;
+  }
+
+  .WorkExperience__Responsibilities {
+    li {
+      font-size: 14px !important;
+    }
+  }
+
+  .WorkExperience__CompanyInfo__description {
+    font-size: 14px;
+  }
+
+  .WorkExperience__TechStacks {
+    h3 {
+      font-size: 14px !important;
+    }
+    span {
+      font-size: 14px !important;
+    }
+  }
+
+  .WorkExperience__CompanyInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .WorkExperience__CompanyInfo__name {
+    font-size: 16px !important;
+  }
+  .WorkExperience__CompanyInfo__role {
+    font-size: 12px !important;
+  }
+
+  .WorkExperience__CompanyInfo__details {
+    font-size: 10px;
+    margin-left: 0 !important;
+  }
+
+  .WorkExperience__CompanyImage {
+    width: 65px;
+    height: 65px;
+    margin-right: 7px;
+
+    img {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .WorkExperience__CompanyInfo__description {
+    font-size: 12px;
+  }
+}
+

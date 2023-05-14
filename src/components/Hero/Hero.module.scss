@@ -1,0 +1,165 @@
+@import "../../styles/variables.scss";
+
+.HeroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .HeroContainer__AboutMe {
+    font-size: $font-text;
+  }
+
+  @media (max-width: 830px) {
+    min-height: auto !important;
+
+    .HeroContainer__AboutMe {
+      font-size: 14px;
+    }
+  }
+}
+
+.Hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 16px;
+
+  @media (max-width: 830px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    .HeroImgContainer {
+      order: 1;
+    }
+    .HeroContent {
+      width: 100%;
+      order: 2;
+    }
+
+    .HeroImgContainer__heroBack {
+      height: 240px !important;
+    }
+
+    .HeroImgContainer__clipPath {
+      height: 270px !important;
+      bottom: -5px !important;
+      right: -8px !important ;
+    }
+
+    .HeroImgContainer__clipPath__img {
+      width: 218px !important;
+      height: 275px !important;
+    }
+  }
+
+  .HeroContent__title {
+    width: 100%;
+    margin-bottom: 35px;
+
+    span:first-of-type {
+      font-size: 21px !important;
+    }
+
+    .HeroContent__title__name {
+      font-family: M_Bold;
+      color: $secondary-color;
+    }
+
+    .HeroContent__title__role {
+      font-family: M_Regular;
+      color: $primary-color;
+    }
+
+    .HeroContent__title__name, .HeroContent__title__role {
+      font-size: 38px;
+    }
+
+    @media (max-width: 970px) {
+      .HeroContent__title__name, .HeroContent__title__role {
+        font-size: 32px;
+      }
+    }
+
+    @media (max-width: 830px) {
+      .HeroContent__title__name, .HeroContent__title__role {
+        font-size: 32px;
+      }
+    }
+
+    @media (max-width: 830px) {
+      font-size: 24px;
+      margin-top: 16px;
+      text-align: center;
+      
+
+      .HeroContent__title__name, .HeroContent__title__role {
+        font-size: 24px;
+      }
+    }
+
+  }
+
+  .HeroImgContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .HeroImgContainer__heroBack {
+    overflow: hidden;
+    -webkit-clip-path: url(#heroClipPath);
+    clip-path: url(#heroClipPath);
+    height: 417px;
+  }
+
+  .HeroImgContainer__clipPath {
+    position: absolute;
+    bottom: 31px;
+    right: -13px;
+    height: 470px;
+
+    .HeroImgContainer__clipPath__img {
+      height: 516px;
+      width: 410px;
+      clip-path: url(#heroClipPath);
+      overflow: hidden;
+    }
+  }
+
+  .HeroContent__Icons {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    @media (max-width: 830px) {
+      justify-content: space-between;
+    }
+  }
+
+  .HeroClipPath {
+    position: fixed;
+    top: 100%;
+  }
+}
+
+.HeroContainer--dark {
+  color: $secondary-color;
+
+  .HeroContent__title__role {
+    color: $light-color !important;
+  }
+
+  .HeroContainer__AboutMe {
+    color: $light-color;
+  }
+
+  .HeroContent__button {
+    color: $secondary-color !important;
+  }
+}
+
+

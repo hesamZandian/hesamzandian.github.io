@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+.WokExperiences__title {
+  font-size: 28px;
+  font-family: M_Bold;
+  margin-top: 24px;
+  color: $secondary-color !important;
+  margin-top: 100px;
+
+  @media (max-width: 830px) {
+    font-size: $font-text;
+  margin-top: 48px !important;
+
+  }
+
+}
+
+.WokExperiences--dark {
+  color: white;
+}

@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $default-light-box-shadow-btn;
+
+  border-radius: $border-radius;
+  padding: 8px 20px;
+  background-color: $light-color;
+  color: $secondary-color;
+  border: none !important;
+  outline: none !important;
+  font-family: M_Medium;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: $font-text;
+  font-weight: bold;
+
+  &:hover {
+    box-shadow: $hover-light-box-shadow-btn;
+    transition: 0.3s;
+  }
+
+  &:active {
+    box-shadow: $active-light-box-shadow-btn;
+    transition: 0.3s;
+  }
+}
+
+.button--dark {
+  background-color: $primary-color;
+  color: $light-color;
+
+  box-shadow: $default-dark-box-shadow-btn;
+
+  &:hover {
+    box-shadow: $hover-dark-box-shadow-btn;
+    transition: 0.3s;
+  }
+
+  &:active {
+    box-shadow: $active-dark-box-shadow-btn;
+    transition: 0.3s;
+  }
+}

@@ -1,0 +1,21 @@
+// Base Colors
+$primary-color: #12232e;
+$secondary-color: #4da8da;
+$night-blue: #007cc7;
+$dark-blue: #203647;
+$light-color: #eefbfb;
+
+$border-radius: 100px;
+
+// Box shadows
+$default-light-box-shadow-btn: -1px 2px 3px #D1D1D1, inset -1px 1px 4px -3px #00D8FF;
+$hover-light-box-shadow-btn: 0px 0px 7px rgba(77, 168, 218, 0.5), -1px 2px 3px #4DA8DA, inset -1px 1px 4px -3px #00D8FF;
+$active-light-box-shadow-btn: inset -1px 2px 3px #D1D1D1, inset 1px -1px 4px -3px #00D8FF;
+
+$default-dark-box-shadow-btn: -1px 2px 3px #0C161D, inset -1px 1px 4px -3px #00D8FF;
+$hover-dark-box-shadow-btn: 0px 0px 7px rgba(77, 168, 218, 0.5), -1px 2px 3px #0C161D, inset -1px 1px 4px -3px #00D8FF;
+$active-dark-box-shadow-btn: inset -1px 2px 3px #0C161D, inset 1px -1px 4px -3px #00D8FF;
+
+
+$font-text: 18px;
+
