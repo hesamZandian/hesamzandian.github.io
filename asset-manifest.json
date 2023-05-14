@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7e9a5865.css",
+    "main.js": "/static/js/main.897ff724.js",
+    "static/media/sam.png": "/static/media/sam.a329499dbdcc83171063.png",
+    "static/media/hero-back-dark.png": "/static/media/hero-back-dark.8afb286d0ddb6e941d65.png",
+    "static/media/Montserrat-Medium.ttf": "/static/media/Montserrat-Medium.c86e3b9010ff63c99166.ttf",
+    "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.2c155811b35513d5beaa.ttf",
+    "static/media/Montserrat-Light.ttf": "/static/media/Montserrat-Light.6fcc9263a21be961d246.ttf",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "static/media/Montserrat-Black.ttf": "/static/media/Montserrat-Black.08437fd0aa82576d3678.ttf",
+    "static/media/hero-back-light.png": "/static/media/hero-back-light.24333959c78caf9ee643.png",
+    "static/media/viramadarpishran.png": "/static/media/viramadarpishran.08f7db836427e830f2a9.png",
+    "static/media/tahatech.png": "/static/media/tahatech.36aa17f575b4852bcbc0.png",
+    "static/media/sun.svg": "/static/media/sun.cfbf1c5c987fa225d3c3ba0c487cc9b6.svg",
+    "static/media/github.svg": "/static/media/github.7795c74dbf916f02d8d9470d3b00a703.svg",
+    "static/media/moon.svg": "/static/media/moon.874b62a55645d3448463f0f672846fa9.svg",
+    "index.html": "/index.html",
+    "static/media/linkedIn.svg": "/static/media/linkedIn.38d086c708df1703a44f4160c5d6d593.svg",
+    "main.7e9a5865.css.map": "/static/css/main.7e9a5865.css.map",
+    "main.897ff724.js.map": "/static/js/main.897ff724.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e9a5865.css",
+    "static/js/main.897ff724.js"
+  ]
+}
