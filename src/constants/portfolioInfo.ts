@@ -1,6 +1,5 @@
 import snappcarfix from "../assets/images/snappcarfix.png";
 import viramadarpishran from "../assets/images/viramadarpishran.png";
-import tahatech from "../assets/images/tahatech.png";
 
 export const portfolioInfo = {
     full_name: `Hesam Zandian`,
@@ -52,20 +51,5 @@ backend technologies as well to expand my current skill set. I’m Looking for a
             `Restructured an e-commerce project from React project to Next.js that improved the performance by 80%.`
         ],
         tech_stacks: `PHP, Laravel, Node.js, Express.js, React, Redux, Next.js, Styled Components`
-    }, {
-        company_logo: tahatech,
-        company_name: `Tahatech`,
-        role: `Front End Developer`,
-        country: `Iran`,
-        city: `Isfahan`,
-        start_date: `January 2020`,
-        end_date: ` August 2020`,
-        company_description: `Tahatech is a knowledge-based company based in Isfahan Science and Research Town, which started its activity in 
-        2016 with the aim of making cities smarter.`,
-        responsibilities: [
-            `Planned, developed, tested, and maintained web applications.`,
-            `implemented admin dashboard panels to manage mobile applications.`
-        ],
-        tech_stacks: `Node.js, Express.js, React, Redux, Next.js, Material UI`
     }],
 }
