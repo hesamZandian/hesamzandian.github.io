@@ -35,7 +35,7 @@ const Hero: React.FC<HeroProps> = (props) => {
           <div className={styles.HeroContent__Icons}>
             <SocialMedia />
             <a
-              href={`https://drive.google.com/file/d/16uzJHH6B-AJcwGBukONPNy9WwPCLY1cv/view?usp=share_link`}
+              href={`https://drive.google.com/file/d/1g4k8IxGWxOo0NyqIoB4R8_lnRyCE01Rx/view?usp=sharing`}
               target="_blank"
               rel="noreferrer"
             >

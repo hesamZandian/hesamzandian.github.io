@@ -37,9 +37,6 @@ const WorkExperience: React.FC<WorkExperienceMoreDetailsProps> = (props) => {
           </div>
         </div>
       </div>
-      <p className={styles.WorkExperience__CompanyInfo__description}>
-        {data?.company_description}
-      </p>
       <div className={styles.WorkExperience__Responsibilities}>
         <h3>Responsibilities:</h3>
         <ul>
@@ -51,20 +48,6 @@ const WorkExperience: React.FC<WorkExperienceMoreDetailsProps> = (props) => {
             );
           })}
         </ul>
-      </div>
-
-      <div className={styles.WorkExperience__TechStacks}>
-        <h3>Tech Stacks:</h3>
-        <div
-          className={`${styles.WorkExperience__TechStacksList} ${
-            darkMode ? styles["WorkExperience__TechStacksList--dark"] : ""
-          }`}
-        >
-          {data?.tech_stacks &&
-            data?.tech_stacks.split(",").map((tech_stack: string) => {
-              return <span key={tech_stack}>{tech_stack}</span>;
-            })}
-        </div>
       </div>
     </div>
   );

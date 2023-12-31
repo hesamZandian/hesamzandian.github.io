@@ -6,9 +6,7 @@ interface WorkExperienceProps {
     city: string;
     start_date: string;
     end_date?: string;
-    company_description: string;
     responsibilities: string[];
-    tech_stacks: string;
 }
 
 interface portfolioInfoProps {
