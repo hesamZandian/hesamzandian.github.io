@@ -1,0 +1,54 @@
+@import '../../styles/variables.scss';
+@mixin title($size) {
+    font-size: $size;
+    color: $secondary-color;
+    font-family: M_Bold;
+}
+
+.Skills__dark {
+    span {
+        color: white;
+    }
+}
+
+.Skills__title {
+  margin-top: 40px;
+
+  @include title(22px)
+}
+.Skills {
+  width: 100%;
+
+    .Title {
+        @include title(18px);
+        border-left: 3px solid $secondary-color;
+        padding: 8px 12px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+
+    .Learning {
+        border: none !important;
+        padding-left: 0 !important;
+        text-transform: capitalize !important;
+        margin-bottom: 12px;
+    }
+
+    .List {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        span {
+          font-size: 16px;
+          border: 1px dashed #4da8da;
+          border-radius: 8px;
+          padding: 8px;
+          @media (max-width: 830px) {
+            margin-right: 5px;
+          }
+        }
+    }
+}
