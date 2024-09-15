@@ -51,7 +51,7 @@ backend technologies as well to expand my current skill set. I’m Looking for a
   skills: [
     {
       title: `Back-end Skills`,
-      skills: [`Node.js`, `Express`, `MongoDB`, `Postgresql`, `MySQL`, `SQL`],
+      skills: [`Node.js`, `Express`, `MongoDB`, `Postgresql`, `MySQL`],
     },
     {
       title: `Front-end Skills`,
@@ -84,7 +84,7 @@ backend technologies as well to expand my current skill set. I’m Looking for a
     {
       title: `Learning Now...`,
       still_learning: true,
-      skills: [`Go`],
+      skills: [`Back-End development`, `Database Architecture & Layered Design`, `PHP`],
     },
   ],
 };
