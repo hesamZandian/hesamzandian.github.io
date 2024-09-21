@@ -84,7 +84,7 @@ backend technologies as well to expand my current skill set. I’m Looking for a
     {
       title: `Learning Now...`,
       still_learning: true,
-      skills: [`Back-End development`, `Database Architecture & Layered Design`, `PHP`],
+      skills: [`Back-End development`, `Database Systems & Architecture`, `PHP`],
     },
   ],
 };
