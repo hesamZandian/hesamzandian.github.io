@@ -10,7 +10,7 @@ import { portfolioInfoProps } from "../../constants/types";
 import SocialMedia from "../SocialMedia/SocialMedia";
 
 interface HeroProps {
-  data: Pick<portfolioInfoProps, "full_name" | "role" | "about_me">;
+  data: Pick<portfolioInfoProps, "full_name" | "role" | "about_me" | "resume_link">;
   darkMode: boolean;
 }
 
@@ -35,7 +35,7 @@ const Hero: React.FC<HeroProps> = (props) => {
           <div className={styles.HeroContent__Icons}>
             <SocialMedia />
             <a
-              href={`https://drive.google.com/file/d/1wrxBeI1cZSqm6jvirTVhwYaozMA3XAKl/view?usp=sharing`}
+              href={data.resume_link}
               target="_blank"
               rel="noreferrer"
             >

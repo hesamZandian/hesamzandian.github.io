@@ -12,7 +12,7 @@ interface WorkExperienceProps {
 interface portfolioInfoProps {
     full_name: string;
     role: string;
-
+    resume_link: string;
     about_me: string;
     graduate_degree: string;
     graduate_duration: string;
