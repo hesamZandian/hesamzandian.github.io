@@ -1,0 +1,76 @@
+@import "../../../styles/variables.scss";
+
+.Page {
+  // 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-color;
+  transition: background-color 0.3s;
+  padding-bottom: 120px;
+  
+  @media (max-width: 830px) {
+    padding-bottom: 60px;
+  }
+}
+
+.Page__Content {
+  // relative w-full 
+  position: relative;
+  width: 100%;
+  .Page__Content__ToggleButton {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: -25px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    background-color: $secondary-color;
+    border-radius: 50px;
+    box-shadow: -2px 1px 12px -3px #4da8da,
+      inset -1px 2px 9px rgba(77, 168, 218, 0.45);
+    cursor: pointer;
+
+    @media screen and (max-width: 830px) {
+      width: 45px;
+      height: 45px;
+      right: -8px;
+      top: 20px;
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1220px) {
+    max-width: 900px !important;
+  }
+  @media screen and (min-width: 1120px) {
+    max-width: 1100px !important;
+  }
+  @media screen and (min-width: 1020px) {
+    max-width: 900px !important;
+  }
+
+  @media screen and (min-width: 320px) {
+    max-width: 85%;
+  }
+
+  @media (max-width: 830px) {
+    padding-top: 30px !important;
+  }
+}
+
+.Page--dark {
+  background-color: $primary-color;
+
+  .Page__Content__ToggleButton {
+    background-color: $light-color !important;
+  }
+}
