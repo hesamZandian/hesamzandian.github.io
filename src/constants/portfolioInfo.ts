@@ -12,7 +12,7 @@ export const portfolioInfo: IPortfolio = {
   graduate_location: 'Esfahan - Iran',
   graduate_duration: 'January 2020 – January 2022',
   resume_link:
-    'https://drive.google.com/file/d/1D0P_-pv6J-Qg-tVKZR7wyzfOz2EygT4p/view?usp=sharing',
+    'https://drive.google.com/file/d/1_mwEwMsePTV6pvKmU5RZ5_iiobYANixy/view?usp=sharing',
   experiences: [
     {
       id: 1,
